@@ -8,7 +8,7 @@ const Ques = require("./models/questions");
 const userQuestion = require("./models/contributedQues");
 const Query = require("./models/query");
 const questions = require("./models/questions");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;`
 const app = express();
 require("dotenv").config();
 const db_URI = process.env.DB_URI;
@@ -207,7 +207,7 @@ app.post("/:username/query", verifytoken, async (req, res) => {
     });
     await queries.save();
     const mailOptions = {
-      from: "sameervohra2004@gmail.com",
+      from: "sachingagneja789@gmail.com",
 
       to: email,
       subject: `Query Recieved`,
@@ -279,7 +279,7 @@ app.put("/:queryId/resolve", async (req, res) => {
         .json({ message: "Email not provided in the query" });
     }
     const mailOptions = {
-      from: "sameervohra2004@gmail.com",
+      from: "sachingagneja789@gmail.com",
       to: email,
       subject: `Query Resolved with: ${queryId}`,
       text: `Query With ${queryId} resolved successfully`,
