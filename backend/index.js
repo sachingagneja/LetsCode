@@ -8,7 +8,7 @@ const Ques = require("./models/questions");
 const userQuestion = require("./models/contributedQues");
 const Query = require("./models/query");
 const questions = require("./models/questions");
-const port = process.env.PORT || 3000;`
+const port = process.env.PORT || 3000;
 const app = express();
 require("dotenv").config();
 const db_URI = process.env.DB_URI;
